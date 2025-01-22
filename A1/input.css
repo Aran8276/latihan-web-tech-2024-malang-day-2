@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-inter;
+  @apply antialiased;
+}
+
+.jumbotron {
+  background-position: 0px;
+}
+
+nav a {
+  @apply opacity-70;
+  @apply hover:opacity-100;
+  @apply transition-all;
+}
+
+.showcase-card {
+  @apply bg-black;
+  @apply rounded-xl;
+  @apply p-5;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-white;
+}

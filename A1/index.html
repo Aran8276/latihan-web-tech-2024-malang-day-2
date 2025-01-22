@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Layout</title>
+  </head>
+
+  <body>
+    <header
+      class="flex sticky top-0 text-gray-100 justify-between px-8 py-4 bg-black"
+    >
+      <section class="flex items-center space-x-8">
+        <div class="flex space-x-5 items-center">
+          <img class="size-8" src="./assets/Mercedes-Logo.svg" />
+          <p class="text-gray-300">Mercedes-Benz</p>
+        </div>
+        <nav class="flex space-x-3">
+          <a href="#">Home</a>
+          <a href="#">Showroom</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </section>
+      <section>
+        <form action="/">
+          <input
+            placeholder="Search..."
+            class="rounded-md px-4 text-sm py-[0.40rem] bg-gray-900"
+          />
+        </form>
+      </section>
+    </header>
+
+    <main class="flex flex-col justify-center">
+      <section
+        class="w-screen jumbotron h-[500px] bg-cover bg-[url('./assets/Mercedes-Benz-CLS-450-AMG-Line-Edition-1-2018-5120x2880-005.jpg')]"
+      >
+        <div
+          class="flex flex-col space-y-6 px-[24rem] justify-center items-center text-white bg-[#00000089] h-full"
+        >
+          <section class="flex-col text-justify space-y-6">
+            <h2 class="text-6xl text-center font-bold">CLS 450 AMG</h2>
+            <p>
+              The Mercedes-Benz CLS 450 AMG is a luxurious mid-size sedan that
+              combines elegant design with powerful performance. It features a
+              turbocharged 3.0-liter inline-six engine producing 362 horsepower,
+              paired with a nine-speed automatic transmission.
+            </p>
+          </section>
+          <section class="flex space-x-4">
+            <button
+              class="bg-black text-sm px-6 py-2 tracking-tight shadow-xl rounded-md hover:bg-gray-900 transition-all"
+            >
+              Get Started
+            </button>
+            <button
+              class="bg-white text-sm text-black px-6 py-2 tracking-tight shadow-xl rounded-md hover:bg-gray-300 transition-all"
+            >
+              Explore
+            </button>
+          </section>
+        </div>
+      </section>
+
+      <section class="m-12">
+        <div class="flex flex-col space-y-12">
+          <h4 class="text-5xl tracking-wide text-center">Our Product Line</h4>
+          <section class="flex space-x-12">
+            <div class="showcase-card">
+              <img src="./assets/cla.png" alt="CLA" />
+              <p class="text-xl font-bold">CLA CLASS</p>
+            </div>
+            <div class="showcase-card">
+              <img src="./assets/cls.png" alt="CLS" />
+              <p class="text-xl font-bold">CLS CLASS</p>
+            </div>
+            <div class="showcase-card">
+              <img src="./assets/e450.png" alt="E450" />
+              <p class="text-xl font-bold">E CLASS</p>
+            </div>
+            <div class="showcase-card">
+              <img src="./assets/w205.png" alt="W205" />
+              <p class="text-xl font-bold">C CLASS</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="m-12">
+        <div class="flex items-center justify-between space-x-12">
+          <section class="flex h-full space-y-6 flex-col">
+            <h4 class="text-5xl text-start font-bold">The CLS 450 AMG</h4>
+            <p class="text-justify tracking-wide">
+              The car offers a comfortable ride with its air suspension system,
+              advanced multimedia features, and a stylish interior. The CLS 450
+              AMG stands out with its sleek coupe-like silhouette, making it a
+              perfect blend of sophistication and sportiness
+            </p>
+            <div>
+              <button
+                class="bg-black text-white text-sm px-6 py-2 tracking-tight shadow-xl rounded-md hover:bg-gray-900 transition-all"
+              >
+                Get Started
+              </button>
+            </div>
+          </section>
+          <img
+            class="rounded-xl object-contain w-[600px]"
+            src="./assets/Mercedes-Benz-CLS-450-AMG-Line-Edition-1-2018-5120x2880-068.jpg"
+          />
+        </div>
+      </section>
+
+      <section class="m-12">
+        <div class="flex items-center justify-between space-x-12">
+          <img
+            class="rounded-xl object-contain w-[600px]"
+            src="./assets/Mercedes-Benz-CLS-450-AMG-Line-Edition-1-2018-5120x2880-077.jpg"
+          />
+          <section class="flex h-full space-y-6 flex-col">
+            <h4 class="text-5xl text-start font-bold">AMG Bespoke</h4>
+            <p class="text-justify tracking-wide">
+              Experience the pinnacle of personalization with AMG Bespoke, the
+              exclusive customization program from Mercedes-AMG. This program
+              allows you to create a truly unique vehicle that reflects your
+              individual style and preferences. Choose from a wide array of
+              bespoke options, including unique paint colors, custom upholstery,
+              exclusive trims, and performance enhancements. With AMG Bespoke,
+              your vehicle becomes a one-of-a-kind masterpiece, combining
+              unparalleled luxury with exceptional performance.
+            </p>
+            <div>
+              <button
+                class="bg-black text-white text-sm px-6 py-2 tracking-tight shadow-xl rounded-md hover:bg-gray-900 transition-all"
+              >
+                Get Started
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black grid grid-cols-4 gap-12 text-white p-14 mt-24">
+      <section class="flex flex-col space-y-4">
+        <div class="flex space-x-5 items-center">
+          <img class="size-8" src="./assets/Mercedes-Logo.svg" />
+          <p class="text-gray-300">Mercedes-Benz</p>
+        </div>
+        <p class="text-justify">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quia
+          neque aspernatur tempora vitae explicabo repudiandae!
+        </p>
+      </section>
+      <section class="flex flex-col space-y-2">
+        <h5 class="text-xl">Mercedes Website</h5>
+        <nav class="flex flex-col space-y-2">
+          <a href="#">Home</a>
+          <a href="#">Showroom</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </section>
+      <section class="flex flex-col space-y-2">
+        <h5 class="text-xl">Header Title 2</h5>
+        <nav class="flex flex-col space-y-2">
+          <a href="#">Showroom</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Home</a>
+        </nav>
+      </section>
+      <section class="flex flex-col space-y-2">
+        <h5 class="text-xl">Social Media</h5>
+        <nav class="flex flex-col space-y-2">
+          <a href="https://youtube.com/@aran8276/">YouTube</a>
+          <a href="https://github.com/Aran8276/">GitHub</a>
+          <a href="https://instagram.com/aran8276/">Instagram</a>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>
